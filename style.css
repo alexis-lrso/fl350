@@ -1,11 +1,11 @@
 body{
     font-family : verdana;
-    background: linear-gradient(150deg,rgba(1, 1, 43, 0.95), rgba(2, 2, 155, 0.95));
+    background: linear-gradient(150deg,rgba(1, 1, 36, 0.95), rgba(3, 3, 107, 0.95));
     background-attachment: fixed;
 }
 
 h1{
-    color : inherit;
+    color : white;
     text-decoration : none;
 }
 

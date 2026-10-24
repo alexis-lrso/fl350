@@ -23,8 +23,19 @@ nav{
     color : white
 }
 
+
+/* Bas de page */
+/*
 footer {
-    color : rgba(255, 255, 255, 0.6);
     font-size : 60%;
     line-height : 50%;
+}
+
+footer p, footer h3 {
+    color : rgba(255, 255, 255, 0.6);
+}
+*/
+a, a:visited {
+    color : white;
+    text-decoration : none
 }

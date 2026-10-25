@@ -1,5 +1,8 @@
+/* Importations */
 @import url("https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap");
 
+
+/* Pages */
 body{
     font-family : verdana;
     background: linear-gradient(160deg,rgba(0, 0, 15, 0.95), rgba(0, 0, 95, 0.95));
@@ -10,6 +13,7 @@ body{
     flex-direction : column;
 }
 
+/* Titre principal */
 h1{
     color : #e7b12bdd;
     text-decoration : none;
@@ -18,14 +22,37 @@ h1{
     font-family: "B612", sans-serif;
 }
 
+/* Sous titre*/
 h3{
     color : rgba(255, 255, 255, 0.95);
 }
 
+/* Texte */
 p{
     color : rgba(255, 255, 255, 0.95);
 }
 
+/* Lignes de séparation*/
+hr {
+    border : 1.8px solid #e7b12bdd;
+    border-radius: 30px;
+}
+
+/* Bandeau page principale */
+.bandeau {
+    background-image:
+        linear-gradient(rgba(1, 1, 85, 0.6),rgba(1, 1, 75, 0.60)),
+        url("images/bandeau.webp");
+    border-radius: 22px;
+    border : 2.5px solid #e7b12bdd;
+    background-size: cover;
+    background-position: center;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation entre les pages */
 nav {
     font-weight: bold;
     font-variant: small-caps;
@@ -40,17 +67,28 @@ nav ul {
     justify-content : space-around;
 }
 
+/* Boutons */
+nav a {
+  display: inline-block;
+  background-color: #e7b12bdd;
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+  padding: 12px 60px;
+  border-radius: 6px;
+}
+
+/* Couleur des boutons quand on passe la souris dessus */
+nav a:hover {
+  background-color: #e7b12bdd;
+}
+
+/* Liens */
 a, a:visited {
     color : rgba(255, 255, 255, 0.95);
     text-decoration : none;
 }
 
-main{
-    flex : 1;
-}
-
 /* Bas de page */
-
 footer {
     font-size : 60%;
     line-height : 50%;
@@ -61,34 +99,6 @@ footer p, footer h3 {
     text-align: center;
 }
 
-hr {
-    border : 1.8px solid #e7b12bdd;
-    border-radius: 30px;
-}
-
-/* Boutons */
-nav a {
-  display: inline-block;
-  background-color: #e7b12bdd;
-  color: rgba(255, 255, 255, 0.95);
-  text-decoration: none;
-  padding: 12px 60px;
-  border-radius: 6px;
-}
-/* Couleur bouton quand on passe la souris dessus */
-nav a:hover {
-  background-color: #e7b12bdd;
-}
-
-.bandeau {
-    background-image:
-        linear-gradient(rgba(1, 1, 85, 0.6),rgba(1, 1, 75, 0.60)),
-        url("images/bandeau.webp");
-    border-radius: 22px;
-    border : 2.5px solid #e7b12bdd;
-    background-size: cover;
-    background-position: center;
-    display : flex;
-    justify-content: center;
-    align-items: center;
+main{
+    flex : 1;
 }

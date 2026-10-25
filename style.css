@@ -1,37 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap");
+
 body{
     font-family : verdana;
-    background: linear-gradient(160deg,rgba(0, 0, 15, 0.95), rgba(0, 0, 80, 0.95));
+    background: linear-gradient(160deg,rgba(0, 0, 15, 0.95), rgba(0, 0, 95, 0.95));
     background-attachment: fixed;
-    min-height : 100vh;
+    min-height : 105vh;
     margin : 1;
     display : flex;
     flex-direction : column;
 }
 
 h1{
-    color : white;
+    color : #e7b12bdd;
     text-decoration : none;
     text-align: center;
-    font-size: 300%;
+    font-size: 320%;
+    font-family: "B612", sans-serif;
 }
 
 h3{
-    color : white;
+    color : rgba(255, 255, 255, 0.95);
 }
 
 p{
-    color : white;
+    color : rgba(255, 255, 255, 0.95);
 }
 
-nav{
+nav {
     font-weight: bold;
     font-variant: small-caps;
-    color : white
+    font-family : verdana;
+    color : rgba(255, 255, 255, 0.95);
+    font-size : 120%;
+}
+
+nav ul {
+    list-style : none;
+    display : flex;
+    justify-content : space-around;
 }
 
 a, a:visited {
-    color : white;
-    text-decoration : none
+    color : rgba(255, 255, 255, 0.95);
+    text-decoration : none;
 }
 
 main{
@@ -48,4 +59,36 @@ footer {
 footer p, footer h3 {
     color : rgba(255, 255, 255, 0.6);
     text-align: center;
+}
+
+hr {
+    border : 1.8px solid #e7b12bdd;
+    border-radius: 30px;
+}
+
+/* Boutons */
+nav a {
+  display: inline-block;
+  background-color: #e7b12bdd;
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+  padding: 12px 60px;
+  border-radius: 6px;
+}
+/* Couleur bouton quand on passe la souris dessus */
+nav a:hover {
+  background-color: #e7b12bdd;
+}
+
+.bandeau {
+    background-image:
+        linear-gradient(rgba(1, 1, 85, 0.6),rgba(1, 1, 75, 0.60)),
+        url("images/bandeau.webp");
+    border-radius: 22px;
+    border : 2.5px solid #e7b12bdd;
+    background-size: cover;
+    background-position: center;
+    display : flex;
+    justify-content: center;
+    align-items: center;
 }
